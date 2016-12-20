@@ -1,0 +1,27 @@
+{
+    "name": "hizbul/onnorokom-sms",
+    "description": "Sending bulk sms using onnorokomsms service",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hizbul Bahar",
+            "email": "hizbul25@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hizbul\\OnnorokomSms\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
