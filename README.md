@@ -38,13 +38,7 @@ Find the `providers` key in `config/app.php` and register the OnnoRokom SMS Serv
         Hizbul\OnnorokomSms\OnnorokomSmsServiceProvider::class,
     ]
 ```
-for Laravel 5.1+
-```php
-    'providers' => [
-        // ...
-        Mews\Captcha\CaptchaServiceProvider::class,
-    ]
-```
+
 
 Find the `aliases` key in `config/app.php`.
 
@@ -55,7 +49,6 @@ Find the `aliases` key in `config/app.php`.
     ]
 ```
 
-```
 
 ## Configuration
 
