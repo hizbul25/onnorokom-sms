@@ -10,7 +10,7 @@ project's `composer.json`.
 ```json
 {
     "require": {
-        "hizbul/onnorokom-sms": "dev",
+        "hizbul/onnorokom-sms": "dev-master",
     },
 }
 ```
