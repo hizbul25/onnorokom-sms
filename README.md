@@ -4,7 +4,7 @@
 ## Installation
 
 The OnnoRokom SMS Service Provider can be installed via [Composer](http://getcomposer.org) by requiring the
-`hizbul/onnorokom-smsa` package and setting the `minimum-stability` to `dev` (required for Laravel 5.*) in your
+`hizbul/onnorokom-sms` package and setting the `minimum-stability` to `dev` (required for Laravel 5.*) in your
 project's `composer.json`.
 
 ```json
@@ -72,7 +72,8 @@ To use your own settings, publish config.
 
     onnorokom_sms(['message' => 'some text msg', 'mobile_number' => '01918....']);
 ```
-## Sending a text message One to Many Bulk:
+
+## Sending text message One to Many (Bulk):
 
 ```php
 
