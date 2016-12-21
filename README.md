@@ -56,7 +56,7 @@ To use your own settings, publish config.
 
 ```$ php artisan vendor:publish```
 
-`config/captcha.php`
+`config/onnorokom.php`
 
 
 ## Sending a text message One to One:
