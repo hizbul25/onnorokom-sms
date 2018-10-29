@@ -23,10 +23,15 @@ class OnnorokomSms implements OnnorokomSmsInterface
                 'mobileNumber'  => $data['mobile_number'],
                 'smsText'       => isset($data['message']) ? $data['message'] : 'Default sms',
                 'type'          => $config['type'],
-                'maskName'      => $config['mask_name'],
+                'maskName'      => '',
                 'campaignName'  => $config['campaign_name']
             ]
         ];
+
+        if ($config['delivery_type'] == 'OneToMany') {
+            unset($onnorokomArray['request']['mobileNumber']);
+            $onnorokomArray['request']['numberList'] = $data['mobile_number'];
+        }
 
         try{
             $value = $soapClient->__call($config['delivery_type'], $onnorokomArray);
