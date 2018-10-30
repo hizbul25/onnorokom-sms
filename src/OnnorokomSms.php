@@ -36,7 +36,8 @@ class OnnorokomSms implements OnnorokomSmsInterface
         try{
             $value = $soapClient->__call($config['delivery_type'], $onnorokomArray);
 
-            $arrResult = explode("||", $value->OneToOneResult);
+            $func = $config['delivery_type'].'Result';
+            $arrResult = explode("||", $value->$func);
             
             return $arrResult;
             
