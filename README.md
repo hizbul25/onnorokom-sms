@@ -1,4 +1,4 @@
-# OnnoRokom SMS for Laravel 5.*
+# OnnoRokom SMS for Laravel 5.*, 6.*, 7.* and 8.*
 
 
 ## Installation
@@ -54,9 +54,8 @@ Find the `aliases` key in `config/app.php`.
 
 To use your own settings, publish config.
 
-```$ php artisan vendor:publish```
+```$ php artisan vendor:publish --provider="Hizbul\OnnorokomSms\OnnorokomSmsServiceProvider"```
 
-`config/onnorokom.php`
 
 
 ## Sending a text message One to One:
